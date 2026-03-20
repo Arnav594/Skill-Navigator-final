@@ -1,0 +1,29 @@
+role,skill,priority,learning_order
+
+Cloud Engineer,AWS,High,1
+Cloud Engineer,Docker,High,2
+Cloud Engineer,Kubernetes,Medium,3
+Cloud Engineer,Linux,Medium,4
+
+Backend Developer,Python,High,1
+Backend Developer,SQL,High,2
+Backend Developer,APIs,High,3
+Backend Developer,Node.js,Medium,4
+
+Data Scientist,Python,High,1
+Data Scientist,Pandas,High,2
+Data Scientist,Machine Learning,High,3
+Data Scientist,Statistics,Medium,4
+Data Scientist,Data Visualization,Medium,5
+
+Frontend Developer,HTML,High,1
+Frontend Developer,CSS,High,2
+Frontend Developer,JavaScript,High,3
+Frontend Developer,React,High,4
+Frontend Developer,UI/UX Basics,Medium,5
+
+DevOps Engineer,Linux,High,1
+DevOps Engineer,Docker,High,2
+DevOps Engineer,CI/CD,High,3
+DevOps Engineer,Kubernetes,Medium,4
+DevOps Engineer,Cloud Monitoring,Medium,5
