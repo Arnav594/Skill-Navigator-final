@@ -179,7 +179,7 @@ https://youtu.be/XfJda8UPhmM
 
 ## 🌐 Live Demo
 
-Frontend: https://your-vercel-link  
+Frontend: https://skill-navigator-final.vercel.app  
 Backend: https://skill-navigator-final.onrender.com  
 
 > Note: Backend may take 15–20 seconds to wake up (free tier on Render).
