@@ -60,6 +60,7 @@ function RoadmapNode({ number, step, how }) {
 }
 
 function App() {
+  const BASE_URL = "https://skill-navigator-final.onrender.com";
   const [message, setMessage] = useState("");
   const [role, setRole] = useState("");
   const [roles, setRoles] = useState([]);
@@ -81,7 +82,7 @@ function App() {
   const [quizError, setQuizError] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/roles")
+    fetch(`${BASE_URL}/roles`)
       .then((res) => res.json())
       .then((data) => {
         setRoles(data);
@@ -121,7 +122,7 @@ function App() {
     formData.append("roadmap_requested", roadmapRequested);
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/analyze", {
+      const res = await fetch(`${BASE_URL}/analyze`, {
         method: "POST",
         body: formData,
       });
@@ -148,7 +149,7 @@ function App() {
     setQuizError(null);
 
     try {
-      const res = await fetch(`http://127.0.0.1:5000/quiz?role=${encodeURIComponent(role)}`);
+      const res = await fetch(`${BASE_URL}/quiz?role=${encodeURIComponent(role)}`);
       const data = await res.json();
       if (data.error) {
         setQuizError(data.error);
