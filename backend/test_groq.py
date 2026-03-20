@@ -1,9 +1,15 @@
 from groq import Groq
+import os
 
-client = Groq(api_key="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")  # paste your key here
+# Load API key from environment
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
+# Create client
+client = Groq(api_key=GROQ_API_KEY)
+
+# Make request
 response = client.chat.completions.create(
-    model="llama-3.1-8b-instant",  # ✅ new, working,
+    model="llama-3.1-8b-instant",
     messages=[{"role": "user", "content": "Say hi"}]
 )
 
