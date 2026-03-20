@@ -175,4 +175,11 @@ test_quiz_route                PASSED
 
 ## Demo Video
 
-[Link to be added after recording]
+https://youtu.be/XfJda8UPhmM
+
+## 🌐 Live Demo
+
+Frontend: https://your-vercel-link  
+Backend: https://skill-navigator-final.onrender.com  
+
+> Note: Backend may take 15–20 seconds to wake up (free tier on Render).
