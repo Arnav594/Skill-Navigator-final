@@ -1,0 +1,58 @@
+{
+  "sections": {
+    "contact": {
+      "required": true,
+      "weight": 10,
+      "keywords": ["email", "phone", "linkedin", "github", "location"]
+    },
+    "summary": {
+      "required": true,
+      "weight": 15,
+      "min_words": 30,
+      "keywords": ["summary", "objective", "profile", "about"]
+    },
+    "skills": {
+      "required": true,
+      "weight": 20,
+      "min_count": 6,
+      "keywords": ["skills", "technologies", "tools", "competencies", "expertise"]
+    },
+    "experience": {
+      "required": true,
+      "weight": 30,
+      "min_entries": 1,
+      "has_metrics": true,
+      "keywords": ["experience", "work experience", "employment", "history", "internship"]
+    },
+    "education": {
+      "required": true,
+      "weight": 15,
+      "keywords": ["education", "degree", "university", "college", "bachelor", "master"]
+    },
+    "certifications": {
+      "required": false,
+      "weight": 10,
+      "keywords": ["certification", "certified", "certificate", "license", "credential"]
+    }
+  },
+  "ats_rules": {
+    "action_verbs": {
+      "weight": 5,
+      "examples": ["developed", "built", "designed", "implemented", "led", "managed", "created", "improved", "optimized", "delivered"]
+    },
+    "quantified_achievements": {
+      "weight": 5,
+      "patterns": ["%", "increased", "reduced", "improved", "saved", "generated"]
+    },
+    "standard_formatting": {
+      "weight": 5,
+      "rules": ["no_tables", "no_images", "standard_fonts", "single_column"]
+    }
+  },
+  "scoring": {
+    "excellent": 85,
+    "good": 70,
+    "average": 50,
+    "poor": 0
+  }
+}
