@@ -1,10 +1,6 @@
 import google.generativeai as genai
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key="AIzaSyAaBn7CkKwvFxJe3J5_GoSREDjfcpvrWQ4")
 
 try:
     print("Testing gemini-2.0-flash...")
@@ -14,6 +10,7 @@ try:
 except Exception as e:
     print(f"❌ ERROR: {type(e).__name__} - {str(e)[:300]}")
 
+# Also try other model names
 try:
     print("\nTesting gemini-pro...")
     model = genai.GenerativeModel("gemini-pro")
